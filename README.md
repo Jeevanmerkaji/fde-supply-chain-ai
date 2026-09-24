@@ -64,8 +64,8 @@ docker run -v mssql_data:/var/opt/mssql \
 - [x] Source dataset (`data/raw/dynamic_supply_chain_logistics_dataset.csv`)
 - [x] `legacy-mssql` Docker container running (SQL Server 2022, port 1433)
 - [x] Python env pinned and reproducible via `uv` (Python 3.12.13, `requirements.txt`)
-- [ ] `scripts/ingest_legacy_data.py` — load CSV into `dbo.TBL_SC_FLEET_HIST_RAW`
-- [ ] Verify row counts via SQL Server (mssql) VS Code extension
+- [x] `scripts/ingest_legacy_data.py` — load CSV into `dbo.TBL_SC_FLEET_HIST_RAW`
+- [x] Verify row counts (32,065 rows loaded)
 - [ ] Production DB on EC2 (`c7i-flex.large`, 30GB, Ubuntu)
 
 ### Phase 1 — SOP ingestion (RAG)
